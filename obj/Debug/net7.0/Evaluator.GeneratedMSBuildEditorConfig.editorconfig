@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Evaluator
 build_property.RootNamespace = Evaluator
-build_property.ProjectDir = C:\Users\Acer\source\repos\EvaluatorWeb\Evaluator\
+build_property.ProjectDir = C:\GitHub\CBTD-Alex\Evaluator\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Acer\source\repos\EvaluatorWeb\Evaluator
+build_property.MSBuildProjectDirectory = C:\GitHub\CBTD-Alex\Evaluator
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/ApplicationProfs/Create.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/ApplicationProfs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25Qcm9mc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/ApplicationProfs/Index.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/ApplicationProfs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25Qcm9mc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Criterias/Create.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Criterias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JpdGVyaWFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Criterias/Delete.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Criterias/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JpdGVyaWFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Criterias/Edit.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Criterias/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JpdGVyaWFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Criterias/Index.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Criterias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JpdGVyaWFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Error.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Index.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Privacy.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/_ViewImports.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/_ViewStart.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Acer/source/repos/EvaluatorWeb/Evaluator/Pages/Shared/_Layout.cshtml]
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-txveu7rvkf
