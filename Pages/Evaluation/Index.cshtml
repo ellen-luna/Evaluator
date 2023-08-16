@@ -2,3 +2,28 @@
 @model Evaluator.Pages.Evaluation.IndexModel
 @{
 }
+<!--Create a form that runs through all of the applications in the database and allows the evaluator to click on them-->
+<table >
+	<thead>
+		<tr>
+			<th>
+				Application Id
+			</th>
+
+			<th>
+				&nbsp;
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+@foreach (var obj in Model.objEvaluationHeadList)
+{
+	<tr>
+		<td width="80%">@obj.ApplicationId</td>
+
+
+		
+
+	</tr>
+}
+</tbody>
