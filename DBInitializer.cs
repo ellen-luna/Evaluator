@@ -16,27 +16,29 @@ namespace Evaluator
 		}
 		public void Initialize()
 		{
-			_db.Database.EnsureCreated();
-			try
+			if (_db.Database.EnsureCreated())
 			{
-				if (_db.Database.GetPendingMigrations().Any())
+				try
 				{
-					_db.Database.Migrate();
+					if (_db.Database.GetPendingMigrations().Any())
+					{
+						_db.Database.Migrate();
+					}
 				}
-			}
-			catch (Exception)
-			{
+				catch (Exception)
+				{
 
-			}
-			var AppHead = new List<EvaluationHead>
+				}
+				var AppHead = new List<EvaluationHead>
 			{
 				new EvaluationHead { ApplicationId = 3}
 			};
-			foreach (var a in AppHead)
-			{
-				_db.EvaluationHead.Add(a);
+				foreach (var a in AppHead)
+				{
+					_db.EvaluationHead.Add(a);
+				}
+				_db.SaveChanges();
 			}
-			_db.SaveChanges();
 		}
 	}
 }
