@@ -9,3 +9,11 @@ obj/Debug/net7.0/Evaluator.pdb
 obj/Debug/net7.0/project.razor.vs.json
 obj/Debug/net7.0/ref/Evaluator.dll
 obj/Debug/net7.0/refint/Evaluator.dll
+*.dll
+*.pdb
+*.cache
+*.txt
+*.cache
+*.pdb
+*.json
+*.json
