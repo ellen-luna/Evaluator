@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\source\\repos\\EvaluatorWeb\\Evaluator\\Evaluator.csproj": {}
+    "C:\\Users\\Acer\\Documents\\GitHub\\EvaluatorWeb\\Evaluator\\Evaluator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\source\\repos\\EvaluatorWeb\\Evaluator\\Evaluator.csproj": {
+    "C:\\Users\\Acer\\Documents\\GitHub\\EvaluatorWeb\\Evaluator\\Evaluator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\EvaluatorWeb\\Evaluator\\Evaluator.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Documents\\GitHub\\EvaluatorWeb\\Evaluator\\Evaluator.csproj",
         "projectName": "Evaluator",
-        "projectPath": "C:\\Users\\Acer\\source\\repos\\EvaluatorWeb\\Evaluator\\Evaluator.csproj",
+        "projectPath": "C:\\Users\\Acer\\Documents\\GitHub\\EvaluatorWeb\\Evaluator\\Evaluator.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\source\\repos\\EvaluatorWeb\\Evaluator\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\Documents\\GitHub\\EvaluatorWeb\\Evaluator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

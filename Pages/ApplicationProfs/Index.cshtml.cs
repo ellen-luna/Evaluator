@@ -9,6 +9,8 @@ namespace Evaluator.Pages.ApplicationProfs
     {
 		private readonly ApplicationDbContext _db;
 		public IEnumerable<ApplicantProf> ApplicantProfs { get; set; }
+		public IEnumerable<Applicant> Applicant { get; set; }
+
 		public IndexModel(ApplicationDbContext db)
 		{
 			_db = db;
