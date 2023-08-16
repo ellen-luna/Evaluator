@@ -1,3 +1,4 @@
+using Evaluator;
 using Evaluator.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,7 +9,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
 	builder.Configuration.GetConnectionString("DefaultConnection")
 	));
-
+builder.Services.AddScoped<DBInitializer>();
 
 var app = builder.Build();
 
@@ -28,5 +29,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
+SeedDatabase();
 app.Run();
+void SeedDatabase()
+{
+	using var scope = app.Services.CreateScope();
+	var dbInitializer = scope.ServiceProvider.GetRequiredService<DBInitializer>();
+	dbInitializer.Initialize();
+}
