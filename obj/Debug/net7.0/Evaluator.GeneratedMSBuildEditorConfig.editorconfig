@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25Qcm9mc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Application/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GitHub/CBTD-Alex/Evaluator/Pages/Criterias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JpdGVyaWFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/GitHub/CBTD-Alex/Evaluator/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/CBTD-Alex/Evaluator/Pages/Evaluation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZhbHVhdGlvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/GitHub/CBTD-Alex/Evaluator/Pages/Index.cshtml]
