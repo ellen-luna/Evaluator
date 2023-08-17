@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Evaluator.Pages.ApplicationProfs
 {
+	[BindProperties]
     public class IndexModel : PageModel
     {
 		private readonly ApplicationDbContext _db;
@@ -18,6 +19,9 @@ namespace Evaluator.Pages.ApplicationProfs
 
 		public void OnGet()
         {
-        }
-    }
+			Applicant = _db.Applicant;
+			//ApplicantProfs = _db.ApplicantProf;
+		}
+
+	}
 }

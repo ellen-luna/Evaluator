@@ -17,10 +17,8 @@ namespace Evaluator.Data
 
 		public DbSet<EvaluationHead> EvaluationHead { get; set; }
 		public DbSet<EvaluationTrans> EvaluationTrans { get; set; }
+
 		
-
-
-
 	}
 
 	

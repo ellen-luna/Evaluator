@@ -1,10 +1,11 @@
 ﻿@page
-@model Evaluator.Pages.ApplicationProfs.CreateModel
+@model Evaluator.Pages.ApplicationProfs.EditModel
 
 <form method="post">
+	<input hidden asp-for="Applicant.Id" />
 	<div class="border p-3 mt-4">
 		<div class=" row pb-2">
-			<h2 class="text-primary pl-3">Application </h2>
+			<h2 class="text-primary pl-3">Update Application </h2>
 			<hr />
 		</div>
 		<div class="mb-3">
@@ -24,7 +25,7 @@
 			<textarea asp-for="ApplicantProf.Description" id="txtDesc" rows="3" class="form-control"></textarea>
 			<span asp-validation-for="ApplicantProf.Description" class="text-danger"></span>
 		</div>
-		<button type="submit" class="btn btn-primary" style="width:150px;">Create</button>
+		<button type="submit" class="btn btn-primary" style="width:150px;">Update</button>
 		<a asp-page="Index" class="btn btn-secondary" style="width:150px;">Back to List</a>
 	</div>
 

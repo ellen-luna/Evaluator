@@ -6,11 +6,24 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Evaluator.Migrations
 {
     /// <inheritdoc />
-    public partial class AddDbStructure : Migration
+    public partial class Intials : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Applicant",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AppName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Applicant", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "ApplicantProf",
                 columns: table => new
@@ -74,6 +87,9 @@ namespace Evaluator.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Applicant");
+
             migrationBuilder.DropTable(
                 name: "ApplicantProf");
 
