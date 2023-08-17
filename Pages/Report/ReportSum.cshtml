@@ -35,7 +35,18 @@
 
 		<tbody>
 
-			
+			@foreach (var obj in Model.Applicant)
+			{
+				<tr>
+					
+					<td>@obj.AppName</td>
+
+					<td>
+						
+
+					</td>
+				</tr>
+			}
 
 		</tbody>
 	</table>
