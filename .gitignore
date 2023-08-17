@@ -17,3 +17,6 @@ obj/Debug/net7.0/refint/Evaluator.dll
 *.pdb
 *.json
 *.json
+bin/Debug/net7.0/Evaluator.dll
+*.pdb
+*.json

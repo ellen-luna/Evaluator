@@ -3,7 +3,11 @@
 @{
 }
 <!--Create a form that runs through all of the applications in the database and allows the evaluator to click on them-->
-<table >
+<header>
+
+</header>
+<body>
+<table>
 	<thead>
 		<tr>
 			<th>
@@ -19,11 +23,24 @@
 @foreach (var obj in Model.objEvaluationHeadList)
 {
 	<tr>
-		<td width="80%">@obj.ApplicationId</td>
+		<td >@obj.ApplicationId</td>
 
 
 		
 
 	</tr>
 }
+<tr></tr>
+			@foreach (var obj in Model.objCritList)
+			{
+				<tr>
+					<td >@obj.CritId</td>
+					<td >@obj.Name</td>
+					<td >@obj.Description</td>
+					<td >@obj.Weight</td>
+
+				</tr>
+			}
 </tbody>
+</table>
+</body>
