@@ -40,16 +40,16 @@
 			@foreach (var obj in Model.Criterias)
 			{
 				<tr>
-					<td>@obj.Id	</td>
+					<td>@obj.CritId	</td>
 					<td>@obj.Name	</td>
 					<td>@obj.Description	</td>
 					<td>@obj.Weight	</td>
 					<td>
 						<div class="w-75 btn-group" role="group">
-							<a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+							<a asp-page="Edit" asp-route-id="@obj.CritId" class="btn btn-primary mx-2">
 								<i class="bi bi-pencil-square"></i>
 							</a>
-							<a asp-page="Delete" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+							<a asp-page="Delete" asp-route-id="@obj.CritId" class="btn btn-primary mx-2">
 								<i class="bi bi-trash-fill"></i>
 							</a>
 						</div>

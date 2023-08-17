@@ -5,7 +5,7 @@ namespace Evaluator.Models
 	public class Criteria
 	{
 		[Key]
-        public int Id { get; set; }
+        public int CritId { get; set; }
 		[Required]
 		public string Name { get; set; }
 		public string Description { get; set; }
