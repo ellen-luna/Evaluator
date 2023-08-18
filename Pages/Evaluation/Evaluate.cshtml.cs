@@ -1,4 +1,5 @@
 using Evaluator.Data;
+using Evaluator.Interfaces;
 using Evaluator.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -14,14 +15,19 @@ namespace Evaluator.Pages.Evaluation
 		public IEnumerable<Criteria> ObjCriteriaList { get; set; }
 		public IEnumerable<EvaluationTrans> ObjTransList { get; set; }
 
-		public EvaluateModel(ApplicationDbContext db)
+		public EvaluateModel(UnitOfWork UnitOfWork)
 		{
-			_db= db;
+			_unitOfWork = UnitOfWork;
 			ObjEvaluationHeader = new EvaluationHead();
+			ObjCriteriaList = new List<Criteria>();
+			ObjTransList = new List<EvaluationTrans>();
 		}
-		public void OnGet(int? id)
+		public IActionResult OnGet(int? id)
         {
-			_db.EvaluationHead.Find(id);
-        }
+			ObjEvaluationHeader = _unitOfWork.EvaluationHead.Get(h=>h.ApplicationId==id,includes:"EvaluationTrans");
+			ObjCriteriaList = _unitOfWork.Criteria.GetAll();
+			if(ObjEvaluationHeader is  null) { ObjEvaluationHeader = new EvaluationHead(); }
+			return Page();
+		}
     }
 }
