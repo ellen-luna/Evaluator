@@ -11,7 +11,7 @@ namespace Evaluator.Interfaces
 		public IGenericRepository<EvaluationHead> EvaluationHead { get; }
 		public IGenericRepository<EvaluationTrans> EvaluationTrans { get; }
 
-		public IGenericRepository<User> User { get; }
+		public IGenericRepository<ApplicationUser> ApplicationUser { get; }
 		//ADD other Models/Tables here as you create them so UnitOfWork will have access
 
 		//save changes to the data source

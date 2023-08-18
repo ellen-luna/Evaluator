@@ -82,18 +82,18 @@ namespace Evaluator
 				return _EvaluationTrans;
 			}
 		}
-		private IGenericRepository<User> _User;
-		public IGenericRepository<User> User
+		private IGenericRepository<ApplicationUser> _ApplicationUser;
+		public IGenericRepository<ApplicationUser> ApplicationUser
 		{
 			get
 			{
 
-				if (_User == null)
+				if (_ApplicationUser == null)
 				{
-					_User = new GenericRepository<User>(_dbContext);
+					_ApplicationUser = new GenericRepository<ApplicationUser>(_dbContext);
 				}
 
-				return _User;
+				return _ApplicationUser;
 			}
 		}
 		//ADD ADDITIONAL METHODS FOR EACH MODEL HERE

@@ -1,6 +1,6 @@
 ﻿using Evaluator.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Evaluator.Data
@@ -20,7 +20,7 @@ namespace Evaluator.Data
 
 		public DbSet<EvaluationHead> EvaluationHead { get; set; }
 		public DbSet<EvaluationTrans> EvaluationTrans { get; set; }
-		public DbSet<User> users { get; set; }
+		public DbSet<ApplicationUser> users { get; set; }
 
 		
 	}
