@@ -7,51 +7,44 @@
 
 </header>
 <body>
-<table>
-	<thead>
-		<tr>
-			<th>
-					Application Id&nbsp;
-			</th>
+	<div class=" = container p-3">
+		<div class="row pt-4">
+			<div class="col-6">
+				<h2 class="text-primary">Applicant List</h2>
+			</div>
+			
+		</div>
 
-			<th>
-					Judges Id&nbsp;
-			</th>
-		</tr>
-	</thead>
+		<table class="table table-bordered table-striped" style="width:100%">
+			<thead>
+				<tr>
+					<th>
+						Applicant Id
+					</th>
+
+					<th>
+						Application Name
+					</th>
+
+				</tr>
+
+			</thead>
 	<tbody>
-@foreach (var obj in Model.objEvaluationHeadList)
-{
-	<tr>
-		<td >@obj.ApplicationId</td>
-					<td>@obj.JudgesId</td>
-
-		
-
-	</tr>
-}
-			<tr>
-				<th>
-					CritId
-				</th>
-				<th>
-					Name
-				</th>
-				<th>
-					Description
-				</th>
-				<th>
-					Weight
-				</th>
-			</tr>
-			@foreach (var obj in Model.objCritList)
+			@foreach (var obj in Model.Applicant)
 			{
 				<tr>
-					<td >@obj.CritId</td>
-					<td >@obj.Name</td>
-					<td >@obj.Description</td>
-					<td >@obj.Weight</td>
+					<td>@obj.Id	</td>
+					<td>@obj.AppName</td>
 
+					<td>
+						<div class="w-75 btn-group" role="group">
+							<a asp-page="Evaluate" asp-route-id="@obj.Id" class="btn btn-primary mx-2"><!--Would I need to generate a new id for evaluation header here?-->
+								Begin Evaluation
+							</a>
+							
+						</div>
+
+					</td>
 				</tr>
 			}
 </tbody>

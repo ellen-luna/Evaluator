@@ -29,19 +29,7 @@ namespace Evaluator
 				{
 
 				}
-				var AppHead = new List<EvaluationHead>
-			{
-				new EvaluationHead { ApplicationId = 3},
-				new EvaluationHead { ApplicationId = 4},
-				new EvaluationHead { ApplicationId = 17},
-				new EvaluationHead { ApplicationId = 0},
-				new EvaluationHead { ApplicationId = 20}
-			};
-				foreach (var a in AppHead)
-				{
-					_db.EvaluationHead.Add(a);
-				}
-				_db.SaveChanges();
+				
 				var Crit = new List<Criteria>
 				{
 					new Criteria {Name = "Fav Color",Description = "",Weight=25},

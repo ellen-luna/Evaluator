@@ -1,9 +1,12 @@
 ﻿using Evaluator.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Evaluator.Data
 {
-	public class ApplicationDbContext : DbContext
+	public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+
 	{
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
 		{
@@ -17,6 +20,7 @@ namespace Evaluator.Data
 
 		public DbSet<EvaluationHead> EvaluationHead { get; set; }
 		public DbSet<EvaluationTrans> EvaluationTrans { get; set; }
+		public DbSet<User> users { get; set; }
 
 		
 	}

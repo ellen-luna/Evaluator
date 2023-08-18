@@ -1,0 +1,52 @@
+﻿@page
+@model Evaluator.Pages.Evaluation.EvaluateModel
+@{
+}
+<header>
+</header>
+<body>
+	<div class=" = container p-3">
+		<div class="row pt-4">
+			<div class="col-6">
+				<h2 class="text-primary">Applicant List</h2>
+			</div>
+			
+		</div>
+
+		<table class="table table-bordered table-striped" style="width:100%">
+			<thead>
+				<tr>
+					<th>
+						Applicant Id
+					</th>
+
+					<th>
+						Application Name
+					</th>
+
+				</tr>
+
+			</thead>
+			<tbody>
+				<!--I need the criteria and I need to have a way to score them maybe add a submit button?-->
+				@foreach (var obj in Model.Applicant)
+				{
+					<tr>
+						<td>@obj.Id	</td>
+						<td>@obj.AppName	</td>
+
+						<td>
+							<div class="w-75 btn-group" role="group">
+								<a asp-page="Evaluate" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+									<!--Would I need to generate a new id for evaluation header here?-->
+									Begin Evaluation
+								</a>
+
+							</div>
+
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+</body>

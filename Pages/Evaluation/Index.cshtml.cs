@@ -11,6 +11,7 @@ namespace Evaluator.Pages.Evaluation
 
 		public List<EvaluationHead> objEvaluationHeadList;  //our UI front end will support looping through and displaying Categories retrieved from the database and stored in a List
 		public List<Criteria> objCritList;
+		public IEnumerable<Applicant> Applicant { get; set; }
 		public IndexModel(ApplicationDbContext db)  //dependency injection of the database service
 		{
 			_db = db;
@@ -25,10 +26,15 @@ namespace Evaluator.Pages.Evaluation
 			//3. Redirect (to another webpage) Results
 			//4. File Results
 			//5. Content Results (like another Razor Web Page)
+			Applicant = _db.Applicant;
 			objEvaluationHeadList = _db.EvaluationHead.ToList();
 			objCritList = _db.Criteria.ToList();
 			return Page();    //render Page
 
+		}
+		public IActionResult OnPost()
+		{
+			return RedirectToPage();
 		}
 	}
 }
